@@ -30,7 +30,7 @@ let mongoUrlDocker = "mongodb://admin:password@mongodb";
 let mongoClientOptions = { useNewUrlParser: true, useUnifiedTopology: true };
 
 // "user-account" in demo with docker. "my-db" in demo with docker-compose
-let databaseName = "user-account";
+let databaseName = "my-db";
 
 app.post('/update-profile', function (req, res) {
   let userObj = req.body;
@@ -78,3 +78,4 @@ app.get('/get-profile', function (req, res) {
 app.listen(3000, function () {
   console.log("app listening on port 3000!");
 });
+
