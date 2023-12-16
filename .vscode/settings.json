@@ -1,0 +1,5 @@
+{
+    "jenkins.pipeline.linter.connector.pass": "P@ssw0rd",
+    "jenkins.pipeline.linter.connector.url": "https://localhost:8080/pipeline-model-converter/validate",
+    "jenkins.pipeline.linter.connector.user": "admin"
+}

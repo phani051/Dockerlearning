@@ -2,19 +2,19 @@ pipeline{
     agent any
 
     stages {
-        stage(Hello1){
+        stage(build){
             steps{
-                bat "echo hello"
+                bat "echo 'This is build phase'"
             }
         }
-        stage(sleep){
+        stage(test){
             steps{
-                bat "PING 1.1.1.1 -n 1 -n 10 >NUL"
+                bat "echo 'This is test phase'"
             }
         }
-        stage(helllo2){
+        stage(deploy){
             steps{
-                bat "echo hello2"
+                bat "This is Deploy phase"
             }
         }
     }
