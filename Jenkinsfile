@@ -14,7 +14,7 @@ pipeline{
         }
         stage(deploy){
             steps{
-                bat "This is Deploy phase"
+                bat "echo 'This is Deploy phase'"
             }
         }
     }
